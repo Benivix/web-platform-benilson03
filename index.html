@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercício 3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">Other page</a>
+    </nav>
+    <main>
+      <h1>Formulário de Reembolso</h1>
+      <form action="/action_page.php">
+        <label for="nmserv">Nome do Servidor*:</label>
+        <input type="text" id="nmserv" name="nomeservidor" required maxlength="40"/><br>
+        <label for="mtserv">Matrícula do Servidor*:</label>
+        <input type="text" id="mtserv" name="matricservidor" required maxlength="7"/><br />
+        <br />
+        <fieldset aria-required="true">
+          <legend>Sexo*</legend>
+          <label for="ffem">Feminino:</label>
+          <input type="radio" id="ffem" name="sexo" value="feminino"/><br />
+          <label for="fmasc">Masculino:</label>
+          <input type="radio" id="fmasc" name="sexo" value="masculino" /><br />
+        </fieldset>
+        <br>
+
+        <input type="checkbox" id="examedep">Exame/Consulta de Dependente<br>
+        <br>
+        <label for="tpreembolso">Tipo de Reembolso:</label>
+        <select name="tiporeembolso" id="tpreembolso">
+          <option value="">Selecione</option>
+          <option value="consulta">Consulta</option>
+          <option value="exame">Exame</option>
+        </select>
+        <br><br>
+        <label for="dtreembolso">Data do Procedimento:</label>
+        <input type="date" id="dtreembolso"  value="2023-06-22"
+        min="2023-05-22" max="2023-06-22"> <br>
+        <label for="descpedido">Descrição do Pedido:</label><br>
+        <textarea name="Text1" id="descpedido" cols="40" rows="5" placeholder="Descreva aqui o seu pedido"></textarea><br>
+        <label for="obs1">Observações:</label><br>
+        <textarea name="Text2" id="obs1" cols="40" rows="5" placeholder="Ajude-nos a melhorar"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar Formulário" />
+        <input type="reset" value="Limpar Campos" />
+      </form>
+    </main>
+  </body>
+</html>
