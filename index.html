@@ -23,13 +23,13 @@
         <fieldset aria-required="true">
           <legend>Sexo*</legend>
           <label for="ffem">Feminino:</label>
-          <input type="radio" id="ffem" name="sexo" value="feminino"/><br />
+          <input type="radio" id="ffem" name="sexo" value="feminino" required/><br />
           <label for="fmasc">Masculino:</label>
-          <input type="radio" id="fmasc" name="sexo" value="masculino" /><br />
+          <input type="radio" id="fmasc" name="sexo" value="masculino" required/><br />
         </fieldset>
         <br>
 
-        <input type="checkbox" id="examedep">Exame/Consulta de Dependente<br>
+        <input type="checkbox" id="examedep"><label for="examedep">Exame/Consulta de Dependente</label><br>
         <br>
         <label for="tpreembolso">Tipo de Reembolso:</label>
         <select name="tiporeembolso" id="tpreembolso">
@@ -46,7 +46,7 @@
         <label for="obs1">Observações:</label><br>
         <textarea name="Text2" id="obs1" cols="40" rows="5" placeholder="Ajude-nos a melhorar"></textarea>
         <br><br>
-        <input type="submit" value="Enviar Formulário" />
+        <input type="submit" formaction="/page2.html" value="Enviar Formulário" />
         <input type="reset" value="Limpar Campos" />
       </form>
     </main>
